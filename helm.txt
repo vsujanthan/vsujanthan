@@ -1,0 +1,6 @@
+> cd magma-helm-repo
+> helm package ~/my-helm-charts/my-app-chart #This will create tgz file with chart in current directory
+> helm repo index . #This will create index.yaml file which references my-app-chart.yaml
+> git add .
+> git commit -m "my-app-chart"
+> git push
